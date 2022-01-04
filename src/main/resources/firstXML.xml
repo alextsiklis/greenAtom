@@ -1,0 +1,15 @@
+<ns0:Material xmlns:ns0="urn:test.ru">
+    <MATNO>4711</MATNO>
+    <MATTEXT>
+        <LANGKEY>DE</LANGKEY>
+        <TEXT>Bleistift</TEXT>
+    </MATTEXT>
+    <MATTEXT>
+        <LANGKEY>EN</LANGKEY>
+        <TEXT>Pencil</TEXT>
+    </MATTEXT>
+    <MATTEXT>
+        <LANGKEY>RU</LANGKEY>
+        <TEXT>Карандаш</TEXT>
+    </MATTEXT>
+</ns0:Material>
