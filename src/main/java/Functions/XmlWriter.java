@@ -12,10 +12,11 @@ public class XmlWriter {
 
     public static void xmlWriter(Item item) {
         try {
-            JAXBContext jaxbContext = JAXBContext.newInstance(item.getClass());
+            JAXBContext jaxbContext = JAXBContext.newInstance(Item.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-            File requestFile = new File("ResultedXML" + new Date().getTime() + ".xml");
+            Date date = new Date();
+            File requestFile = new File(String.format("ResultedXML/%tF.xml", date));
             marshaller.marshal(item, requestFile);
         } catch (JAXBException e) {
             e.printStackTrace();

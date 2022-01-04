@@ -14,6 +14,7 @@ public class Transformer {
     public static ArrayList<Item> transform(ArrayList<Product> products){
         ArrayList<Item> items = new ArrayList<>();
 
+        System.out.println(products);
 
         for(Product product: products){
             Item item = new Item();

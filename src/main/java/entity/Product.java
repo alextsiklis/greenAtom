@@ -16,7 +16,7 @@ import static entity.Languages.*;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "root")
+@XmlRootElement(name = "Material")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
     @XmlElement(name = "MATNO")

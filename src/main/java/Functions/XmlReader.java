@@ -20,7 +20,7 @@ public class XmlReader {
 
         Product product = null;
         try {
-            JAXBContext context = JAXBContext.newInstance(product.getClass());
+            JAXBContext context = JAXBContext.newInstance(Product.class);
             Unmarshaller unMarshaller = context.createUnmarshaller();
             product = (Product) unMarshaller.unmarshal(file);
         } catch (JAXBException e) {
