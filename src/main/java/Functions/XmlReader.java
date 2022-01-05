@@ -9,12 +9,8 @@ import java.awt.*;
 import java.io.File;
 
 public class XmlReader {
-    private static final String TEXT = "text";
-    private static final String ID = "mathno";
-    private static final String LANGUAGE = "langkey";
 
     public static Product xmlReader(String filename) {
-        List products = new List();
         String path = "src/main/resources/" + filename + ".xml";
         File file = new File(path);
 

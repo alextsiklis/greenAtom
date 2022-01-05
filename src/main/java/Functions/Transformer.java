@@ -19,7 +19,7 @@ public class Transformer {
         for(Product product: products){
             Item item = new Item();
             item.setId(product.getId());
-            item.setDescription(product.getRuName());
+//            item.setDescription(product.getMap().get(RU));
             items.add(item);
         }
 
