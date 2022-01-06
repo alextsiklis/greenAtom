@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "Material")
+@XmlRootElement(name = "Material", namespace = "urn:test.ru")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
     @XmlElement(name = "MATNO")

@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "ProductDefinition")
+@XmlRootElement(name = "ProductDefinition", namespace = "urn:test.ru")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Item {
     @XmlElement(name = "RefNo")

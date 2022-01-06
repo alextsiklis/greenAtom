@@ -1,4 +1,4 @@
-<Material>
+<ns0:Material xmlns:ns0="urn:test.ru">
     <MATNO>4711</MATNO>
     <MATTEXT>
         <LANGKEY>DE</LANGKEY>
@@ -12,4 +12,4 @@
         <LANGKEY>RU</LANGKEY>
         <TEXT>Карандаш</TEXT>
     </MATTEXT>
-</Material>
+</ns0:Material>
