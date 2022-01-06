@@ -19,6 +19,7 @@ public class XmlReader {
             JAXBContext context = JAXBContext.newInstance(Product.class);
             Unmarshaller unMarshaller = context.createUnmarshaller();
             product = (Product) unMarshaller.unmarshal(file);
+            LogCreator.logCreator("Информация с файла прочитана");
         } catch (JAXBException e) {
             e.printStackTrace();
         }

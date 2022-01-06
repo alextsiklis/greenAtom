@@ -17,7 +17,7 @@ public class Transformer {
             }
         }
 
-        System.out.println(item);
+        LogCreator.logCreator("Информация обработана");
         return item;
     }
 

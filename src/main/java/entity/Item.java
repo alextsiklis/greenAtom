@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Item {
     @XmlElement(name = "RefNo")
-    private String Id;
+    private int Id;
 
     @XmlElement(name = "Description")
     private String Description;

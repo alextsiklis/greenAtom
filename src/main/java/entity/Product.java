@@ -18,7 +18,7 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
     @XmlElement(name = "MATNO")
-    private String Id;
+    private int Id;
 
 //    @XmlElement(name = "MATTEXT")
 //    @XmlJavaTypeAdapter(MapAdapter.class)

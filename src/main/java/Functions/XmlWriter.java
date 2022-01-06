@@ -18,6 +18,7 @@ public class XmlWriter {
             Date date = new Date();
             File requestFile = new File(String.format("ResultedXML/%tF.xml", date));
             marshaller.marshal(item, requestFile);
+            LogCreator.logCreator("Информация записана в файл");
         } catch (JAXBException e) {
             e.printStackTrace();
         }
