@@ -13,12 +13,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@XmlRootElement(name = "ProductDefinition")
+@XmlRootElement(name = "MATTEXT")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Item {
-    @XmlElement(name = "RefNo")
-    private String Id;
+public class LangName {
 
-    @XmlElement(name = "Description")
-    private String Description;
+    @XmlElement(name = "LANGKEY")
+    private String lang;
+
+    @XmlElement(name = "TEXT")
+    private String name;
 }

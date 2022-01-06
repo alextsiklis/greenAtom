@@ -1,29 +1,24 @@
 package Functions;
 
 import entity.Item;
-import entity.Languages;
 import entity.Product;
 
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import static entity.Languages.*;
+import java.util.Objects;
 
 public class Transformer {
-    public static ArrayList<Item> transform(ArrayList<Product> products){
-        ArrayList<Item> items = new ArrayList<>();
+    public static Item transform(Product product){
+        Item item = new Item();
+        item.setId(product.getId());
+//        item.setDescription(product.getMapElements().getValue());
 
-        System.out.println(products);
-
-        for(Product product: products){
-            Item item = new Item();
-            item.setId(product.getId());
-//            item.setDescription(product.getMap().get(RU));
-            items.add(item);
+        for(int i=0; i < product.getLangNames().size(); i++) {
+            if (Objects.equals(product.getLangNames().get(i).getLang(), "RU")) {
+                item.setDescription(product.getLangNames().get(i).getName());
+            }
         }
 
-        return items;
+        System.out.println(item);
+        return item;
     }
 
 }

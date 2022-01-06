@@ -22,7 +22,7 @@ public class XmlReader {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-
+        System.out.println(product);
         return product;
     }
 }
