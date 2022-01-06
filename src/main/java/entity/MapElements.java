@@ -18,6 +18,8 @@ import javax.xml.bind.annotation.*;
         "key",
         "value"
 })
+
+//Нужен, если рассматривать Map в объекте
 public class MapElements {
     @XmlElement(name = "LANGKEY")
     public String key;
@@ -26,5 +28,3 @@ public class MapElements {
     public String value;
 
 }
-
-

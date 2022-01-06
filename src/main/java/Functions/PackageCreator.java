@@ -2,6 +2,7 @@ package Functions;
 
 import java.io.File;
 
+//Создает папку, принимая название
 public class PackageCreator {
     public static void createPackage(String name){
         File dir = new File(name);

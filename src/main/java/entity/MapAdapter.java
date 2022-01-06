@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.Map;
 import java.util.TreeMap;
 
+//Нужен для маршаллинга XML с Map
 public class MapAdapter extends XmlAdapter<MapElements[], Map<String, String>> {
     public MapAdapter() {
     }

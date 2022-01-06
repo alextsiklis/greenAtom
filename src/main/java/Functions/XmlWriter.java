@@ -8,6 +8,7 @@ import javax.xml.bind.Marshaller;
 import java.io.File;
 import java.util.Date;
 
+//Создает XMl файл и записывает в него информацию об объекте
 public class XmlWriter {
 
     public static void xmlWriter(Item item) {

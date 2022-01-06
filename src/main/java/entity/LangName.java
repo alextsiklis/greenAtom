@@ -15,6 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "MATTEXT")
 @XmlAccessorType(XmlAccessType.FIELD)
+//Объект, входящий в product (если рассматривать лист этих объектов в объекте начального файла)
 public class LangName {
 
     @XmlElement(name = "LANGKEY")

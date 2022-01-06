@@ -15,6 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "ProductDefinition", namespace = "urn:test.ru")
 @XmlAccessorType(XmlAccessType.FIELD)
+//Конечный объект
 public class Item {
     @XmlElement(name = "RefNo")
     private int Id;

@@ -16,6 +16,7 @@ import java.util.List;
 
 @XmlRootElement(name = "Material", namespace = "urn:test.ru")
 @XmlAccessorType(XmlAccessType.FIELD)
+//Обрабатыввемый объект из начального файла XML
 public class Product {
     @XmlElement(name = "MATNO")
     private int Id;
