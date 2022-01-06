@@ -5,7 +5,6 @@ import entity.Product;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import java.awt.*;
 import java.io.File;
 
 public class XmlReader {
@@ -23,7 +22,6 @@ public class XmlReader {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-        System.out.println(product);
         return product;
     }
 }
